@@ -1,0 +1,1197 @@
+14264 2026-09-30 10:09:44,828 webull.core.http.initializer.client_initializer INFO _check_token_enable result is False
+14264 2026-09-30 10:09:45,238 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/trading/assets/balances/get",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {
+    "account_id": "2EG4F8NP5GH338M72P0N6CREF8"
+  },
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:09:44Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "30fc0a44-4f61-5764-b31f-e38c287a7cea",
+    "x-signature": "KlH5Y7bMKFNRwfPkRr4kNS8B5Hna9eqcBkzcG323pnM=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'c:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'message': 'Invalid account or insufficient permissions.', 'error_code': 'ACCOUNT_ACCESS_DENIED'} ServerException:HTTP Status: 403, Code: ACCOUNT_ACCESS_DENIED, Msg: Invalid account or insufficient permissions., RequestID: 401680f3-c760-4203-b6fd-6a30c38a62c6
+14264 2026-09-30 10:09:45,238 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/trading/assets/balances/get",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {
+    "account_id": "2EG4F8NP5GH338M72P0N6CREF8"
+  },
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:09:44Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "30fc0a44-4f61-5764-b31f-e38c287a7cea",
+    "x-signature": "KlH5Y7bMKFNRwfPkRr4kNS8B5Hna9eqcBkzcG323pnM=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'c:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'message': 'Invalid account or insufficient permissions.', 'error_code': 'ACCOUNT_ACCESS_DENIED'} ServerException:HTTP Status: 403, Code: ACCOUNT_ACCESS_DENIED, Msg: Invalid account or insufficient permissions., RequestID: 401680f3-c760-4203-b6fd-6a30c38a62c6
+14264 2026-09-30 10:09:45,241 webull.core.client ERROR get_response exception. {
+  "error_code": "ACCOUNT_ACCESS_DENIED",
+  "error_msg": "Invalid account or insufficient permissions.",
+  "http_status": 403,
+  "request_id": "401680f3-c760-4203-b6fd-6a30c38a62c6"
+}
+14264 2026-09-30 10:09:45,241 webull.core.client ERROR get_response exception. {
+  "error_code": "ACCOUNT_ACCESS_DENIED",
+  "error_msg": "Invalid account or insufficient permissions.",
+  "http_status": 403,
+  "request_id": "401680f3-c760-4203-b6fd-6a30c38a62c6"
+}
+14264 2026-09-30 10:09:52,303 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/trading/assets/balances/get",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {
+    "account_id": "2EG4F8NP5GH338M72P0N6CREF8"
+  },
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:09:51Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "2376e39e-7eaa-5215-bcc5-89023b2c345a",
+    "x-signature": "wUJFzucCqixaG8qxNjGFeSvqrpVb+EsvdKPN9qyrOIY=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'c:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'message': 'Invalid account or insufficient permissions.', 'error_code': 'ACCOUNT_ACCESS_DENIED'} ServerException:HTTP Status: 403, Code: ACCOUNT_ACCESS_DENIED, Msg: Invalid account or insufficient permissions., RequestID: c2e279f1-5b3a-48d7-a485-7078d7530824
+14264 2026-09-30 10:09:52,303 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/trading/assets/balances/get",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {
+    "account_id": "2EG4F8NP5GH338M72P0N6CREF8"
+  },
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:09:51Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "2376e39e-7eaa-5215-bcc5-89023b2c345a",
+    "x-signature": "wUJFzucCqixaG8qxNjGFeSvqrpVb+EsvdKPN9qyrOIY=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'c:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'message': 'Invalid account or insufficient permissions.', 'error_code': 'ACCOUNT_ACCESS_DENIED'} ServerException:HTTP Status: 403, Code: ACCOUNT_ACCESS_DENIED, Msg: Invalid account or insufficient permissions., RequestID: c2e279f1-5b3a-48d7-a485-7078d7530824
+14264 2026-09-30 10:09:52,303 webull.core.client ERROR get_response exception. {
+  "error_code": "ACCOUNT_ACCESS_DENIED",
+  "error_msg": "Invalid account or insufficient permissions.",
+  "http_status": 403,
+  "request_id": "c2e279f1-5b3a-48d7-a485-7078d7530824"
+}
+14264 2026-09-30 10:09:52,303 webull.core.client ERROR get_response exception. {
+  "error_code": "ACCOUNT_ACCESS_DENIED",
+  "error_msg": "Invalid account or insufficient permissions.",
+  "http_status": 403,
+  "request_id": "c2e279f1-5b3a-48d7-a485-7078d7530824"
+}
+14264 2026-09-30 10:10:03,064 webull.core.http.initializer.client_initializer INFO _check_token_enable result is False
+14264 2026-09-30 10:10:03,064 webull.core.http.initializer.client_initializer INFO _check_token_enable result is False
+14264 2026-09-30 10:10:03,064 webull.core.http.initializer.client_initializer INFO _check_token_enable result is False
+14264 2026-09-30 10:10:07,663 webull.core.http.initializer.client_initializer INFO _check_token_enable result is False
+14264 2026-09-30 10:10:07,663 webull.core.http.initializer.client_initializer INFO _check_token_enable result is False
+14264 2026-09-30 10:10:07,663 webull.core.http.initializer.client_initializer INFO _check_token_enable result is False
+14264 2026-09-30 10:10:07,663 webull.core.http.initializer.client_initializer INFO _check_token_enable result is False
+14264 2026-09-30 10:10:08,072 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/trading/assets/balances/get",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {
+    "account_id": "2EG4F8NP5GH338M72P0N6CREF8"
+  },
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:10:07Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "4c646c4b-9ae0-551e-ae2a-5e7f1cdc95b8",
+    "x-signature": "TUC2X+4BEowYFh7HpwZqFYAA96yMVjmyktct5Wukkm4=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'c:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'message': 'Invalid account or insufficient permissions.', 'error_code': 'ACCOUNT_ACCESS_DENIED'} ServerException:HTTP Status: 403, Code: ACCOUNT_ACCESS_DENIED, Msg: Invalid account or insufficient permissions., RequestID: e6ba2c7f-872a-47d0-92fd-7f3a7cc78ec6
+14264 2026-09-30 10:10:08,072 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/trading/assets/balances/get",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {
+    "account_id": "2EG4F8NP5GH338M72P0N6CREF8"
+  },
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:10:07Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "4c646c4b-9ae0-551e-ae2a-5e7f1cdc95b8",
+    "x-signature": "TUC2X+4BEowYFh7HpwZqFYAA96yMVjmyktct5Wukkm4=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'c:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'message': 'Invalid account or insufficient permissions.', 'error_code': 'ACCOUNT_ACCESS_DENIED'} ServerException:HTTP Status: 403, Code: ACCOUNT_ACCESS_DENIED, Msg: Invalid account or insufficient permissions., RequestID: e6ba2c7f-872a-47d0-92fd-7f3a7cc78ec6
+14264 2026-09-30 10:10:08,072 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/trading/assets/balances/get",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {
+    "account_id": "2EG4F8NP5GH338M72P0N6CREF8"
+  },
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:10:07Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "4c646c4b-9ae0-551e-ae2a-5e7f1cdc95b8",
+    "x-signature": "TUC2X+4BEowYFh7HpwZqFYAA96yMVjmyktct5Wukkm4=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'c:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'message': 'Invalid account or insufficient permissions.', 'error_code': 'ACCOUNT_ACCESS_DENIED'} ServerException:HTTP Status: 403, Code: ACCOUNT_ACCESS_DENIED, Msg: Invalid account or insufficient permissions., RequestID: e6ba2c7f-872a-47d0-92fd-7f3a7cc78ec6
+14264 2026-09-30 10:10:08,072 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/trading/assets/balances/get",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {
+    "account_id": "2EG4F8NP5GH338M72P0N6CREF8"
+  },
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:10:07Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "4c646c4b-9ae0-551e-ae2a-5e7f1cdc95b8",
+    "x-signature": "TUC2X+4BEowYFh7HpwZqFYAA96yMVjmyktct5Wukkm4=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'c:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'message': 'Invalid account or insufficient permissions.', 'error_code': 'ACCOUNT_ACCESS_DENIED'} ServerException:HTTP Status: 403, Code: ACCOUNT_ACCESS_DENIED, Msg: Invalid account or insufficient permissions., RequestID: e6ba2c7f-872a-47d0-92fd-7f3a7cc78ec6
+14264 2026-09-30 10:10:08,079 webull.core.client ERROR get_response exception. {
+  "error_code": "ACCOUNT_ACCESS_DENIED",
+  "error_msg": "Invalid account or insufficient permissions.",
+  "http_status": 403,
+  "request_id": "e6ba2c7f-872a-47d0-92fd-7f3a7cc78ec6"
+}
+14264 2026-09-30 10:10:08,079 webull.core.client ERROR get_response exception. {
+  "error_code": "ACCOUNT_ACCESS_DENIED",
+  "error_msg": "Invalid account or insufficient permissions.",
+  "http_status": 403,
+  "request_id": "e6ba2c7f-872a-47d0-92fd-7f3a7cc78ec6"
+}
+14264 2026-09-30 10:10:08,079 webull.core.client ERROR get_response exception. {
+  "error_code": "ACCOUNT_ACCESS_DENIED",
+  "error_msg": "Invalid account or insufficient permissions.",
+  "http_status": 403,
+  "request_id": "e6ba2c7f-872a-47d0-92fd-7f3a7cc78ec6"
+}
+14264 2026-09-30 10:10:08,079 webull.core.client ERROR get_response exception. {
+  "error_code": "ACCOUNT_ACCESS_DENIED",
+  "error_msg": "Invalid account or insufficient permissions.",
+  "http_status": 403,
+  "request_id": "e6ba2c7f-872a-47d0-92fd-7f3a7cc78ec6"
+}
+34952 2026-09-30 10:13:18,504 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/openapi/config",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {},
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:13:17Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "6b887990-51d0-5116-9a01-63d2a9aa089c",
+    "x-signature": "/p6hRAlBfSiYACffGUNLAQU9UTeKuVU5vxnC7E6ibLk=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'c:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'error_code': 'UNAUTHORIZED', 'message': 'Header x-signature is invalid.'} ServerException:HTTP Status: 401, Code: UNAUTHORIZED, Msg: Header x-signature is invalid., RequestID: 9a3dd177-3feb-422c-bf27-cc261ded7dfb
+34952 2026-09-30 10:13:18,504 webull.core.client ERROR get_response exception. {
+  "error_code": "UNAUTHORIZED",
+  "error_msg": "Header x-signature is invalid.",
+  "http_status": 401,
+  "request_id": "9a3dd177-3feb-422c-bf27-cc261ded7dfb"
+}
+41624 2026-09-30 10:15:06,678 webull.core.http.initializer.client_initializer INFO _check_token_enable result is False
+25100 2026-09-30 10:15:53,071 webull.core.http.initializer.client_initializer INFO _check_token_enable result is False
+25100 2026-09-30 10:15:53,886 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/trading/assets/balances/get",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {
+    "account_id": "2EG4F8NP5GH338M72P0N6CREF8"
+  },
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:15:53Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "492f72ec-ddcc-5b05-9c9e-23ed23003f54",
+    "x-signature": "kZp3RTWwX9cyEySn3tsnT2TL5iZ7WFXPX7t4vtMDtP4=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'C:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'message': 'Invalid account or insufficient permissions.', 'error_code': 'ACCOUNT_ACCESS_DENIED'} ServerException:HTTP Status: 403, Code: ACCOUNT_ACCESS_DENIED, Msg: Invalid account or insufficient permissions., RequestID: 3f81d603-7da2-42f0-8538-3f85db1d18e5
+25100 2026-09-30 10:15:53,886 webull.core.client ERROR get_response exception. {
+  "error_code": "ACCOUNT_ACCESS_DENIED",
+  "error_msg": "Invalid account or insufficient permissions.",
+  "http_status": 403,
+  "request_id": "3f81d603-7da2-42f0-8538-3f85db1d18e5"
+}
+28056 2026-09-30 10:16:06,063 webull.core.http.initializer.client_initializer INFO _check_token_enable result is False
+28056 2026-09-30 10:16:06,410 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/trading/assets/balances/get",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {
+    "account_id": "2EG4F8NP5GH338M72P0N6CREF8"
+  },
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:16:06Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "c01d3bc4-d5df-5e4a-b1f6-8253fbf6d5aa",
+    "x-signature": "4i7XTZtjaYofTttSDctfxCa9raJGwhIsM11CNDqCOLY=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'C:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'message': 'Invalid account or insufficient permissions.', 'error_code': 'ACCOUNT_ACCESS_DENIED'} ServerException:HTTP Status: 403, Code: ACCOUNT_ACCESS_DENIED, Msg: Invalid account or insufficient permissions., RequestID: 266e4500-bf94-40be-b514-7a57558e171b
+28056 2026-09-30 10:16:06,410 webull.core.client ERROR get_response exception. {
+  "error_code": "ACCOUNT_ACCESS_DENIED",
+  "error_msg": "Invalid account or insufficient permissions.",
+  "http_status": 403,
+  "request_id": "266e4500-bf94-40be-b514-7a57558e171b"
+}
+15192 2026-09-30 10:19:44,085 webull.core.http.initializer.client_initializer INFO _check_token_enable result is False
+15192 2026-09-30 10:19:44,905 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/trading/assets/balances/get",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {
+    "account_id": "2EG4F8NP5GH338M72P0N6CREF8"
+  },
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:19:44Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "429d9346-db83-5294-b3c7-bd7054ac06dd",
+    "x-signature": "wAAvoX4FQo8+H3ZdSOlEIDttqsH6X1OtcheFNZMmRdw=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'C:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'message': 'Invalid account or insufficient permissions.', 'error_code': 'ACCOUNT_ACCESS_DENIED'} ServerException:HTTP Status: 403, Code: ACCOUNT_ACCESS_DENIED, Msg: Invalid account or insufficient permissions., RequestID: 9e51adfb-f9a5-40f5-8693-2da804f0c12d
+15192 2026-09-30 10:19:44,905 webull.core.client ERROR get_response exception. {
+  "error_code": "ACCOUNT_ACCESS_DENIED",
+  "error_msg": "Invalid account or insufficient permissions.",
+  "http_status": 403,
+  "request_id": "9e51adfb-f9a5-40f5-8693-2da804f0c12d"
+}
+21264 2026-09-30 10:22:35,771 webull.core.http.initializer.client_initializer INFO _check_token_enable result is False
+34952 2026-09-30 10:22:46,282 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/openapi/config",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {},
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:22:45Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "8c40ab8f-b093-5e64-b499-5794364a35d8",
+    "x-signature": "DWYpo+7BH+mq/ltxTLq3XnYGforqm7ji0zD3uJQiVCY=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'c:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'error_code': 'UNAUTHORIZED', 'message': 'Header x-signature is invalid.'} ServerException:HTTP Status: 401, Code: UNAUTHORIZED, Msg: Header x-signature is invalid., RequestID: 6a1c2bd6-dc63-40ec-ba57-2b82abef93fb
+34952 2026-09-30 10:22:46,282 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/openapi/config",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {},
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:22:45Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "8c40ab8f-b093-5e64-b499-5794364a35d8",
+    "x-signature": "DWYpo+7BH+mq/ltxTLq3XnYGforqm7ji0zD3uJQiVCY=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'c:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'error_code': 'UNAUTHORIZED', 'message': 'Header x-signature is invalid.'} ServerException:HTTP Status: 401, Code: UNAUTHORIZED, Msg: Header x-signature is invalid., RequestID: 6a1c2bd6-dc63-40ec-ba57-2b82abef93fb
+34952 2026-09-30 10:22:46,284 webull.core.client ERROR get_response exception. {
+  "error_code": "UNAUTHORIZED",
+  "error_msg": "Header x-signature is invalid.",
+  "http_status": 401,
+  "request_id": "6a1c2bd6-dc63-40ec-ba57-2b82abef93fb"
+}
+34952 2026-09-30 10:22:46,284 webull.core.client ERROR get_response exception. {
+  "error_code": "UNAUTHORIZED",
+  "error_msg": "Header x-signature is invalid.",
+  "http_status": 401,
+  "request_id": "6a1c2bd6-dc63-40ec-ba57-2b82abef93fb"
+}
+34952 2026-09-30 10:23:05,799 webull.core.http.initializer.client_initializer INFO _check_token_enable result is False
+34952 2026-09-30 10:23:05,799 webull.core.http.initializer.client_initializer INFO _check_token_enable result is False
+34952 2026-09-30 10:23:05,799 webull.core.http.initializer.client_initializer INFO _check_token_enable result is False
+14264 2026-09-30 10:23:21,775 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/openapi/config",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {},
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:23:21Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "a1c89898-8659-5d33-a821-1a6617c2174b",
+    "x-signature": "ME08DJB5erngI5ajVoxREyMRZWnhwpPHvCRxHZywLzk=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'c:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'error_code': 'UNAUTHORIZED', 'message': 'Header x-signature is invalid.'} ServerException:HTTP Status: 401, Code: UNAUTHORIZED, Msg: Header x-signature is invalid., RequestID: 767eb1fe-4a2a-433b-ab63-b2382800a79c
+14264 2026-09-30 10:23:21,775 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/openapi/config",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {},
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:23:21Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "a1c89898-8659-5d33-a821-1a6617c2174b",
+    "x-signature": "ME08DJB5erngI5ajVoxREyMRZWnhwpPHvCRxHZywLzk=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'c:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'error_code': 'UNAUTHORIZED', 'message': 'Header x-signature is invalid.'} ServerException:HTTP Status: 401, Code: UNAUTHORIZED, Msg: Header x-signature is invalid., RequestID: 767eb1fe-4a2a-433b-ab63-b2382800a79c
+14264 2026-09-30 10:23:21,775 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/openapi/config",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {},
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:23:21Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "a1c89898-8659-5d33-a821-1a6617c2174b",
+    "x-signature": "ME08DJB5erngI5ajVoxREyMRZWnhwpPHvCRxHZywLzk=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'c:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'error_code': 'UNAUTHORIZED', 'message': 'Header x-signature is invalid.'} ServerException:HTTP Status: 401, Code: UNAUTHORIZED, Msg: Header x-signature is invalid., RequestID: 767eb1fe-4a2a-433b-ab63-b2382800a79c
+14264 2026-09-30 10:23:21,775 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/openapi/config",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {},
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:23:21Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "a1c89898-8659-5d33-a821-1a6617c2174b",
+    "x-signature": "ME08DJB5erngI5ajVoxREyMRZWnhwpPHvCRxHZywLzk=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'c:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'error_code': 'UNAUTHORIZED', 'message': 'Header x-signature is invalid.'} ServerException:HTTP Status: 401, Code: UNAUTHORIZED, Msg: Header x-signature is invalid., RequestID: 767eb1fe-4a2a-433b-ab63-b2382800a79c
+14264 2026-09-30 10:23:21,775 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/openapi/config",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {},
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:23:21Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "a1c89898-8659-5d33-a821-1a6617c2174b",
+    "x-signature": "ME08DJB5erngI5ajVoxREyMRZWnhwpPHvCRxHZywLzk=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'c:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'error_code': 'UNAUTHORIZED', 'message': 'Header x-signature is invalid.'} ServerException:HTTP Status: 401, Code: UNAUTHORIZED, Msg: Header x-signature is invalid., RequestID: 767eb1fe-4a2a-433b-ab63-b2382800a79c
+14264 2026-09-30 10:23:21,779 webull.core.client ERROR get_response exception. {
+  "error_code": "UNAUTHORIZED",
+  "error_msg": "Header x-signature is invalid.",
+  "http_status": 401,
+  "request_id": "767eb1fe-4a2a-433b-ab63-b2382800a79c"
+}
+14264 2026-09-30 10:23:21,779 webull.core.client ERROR get_response exception. {
+  "error_code": "UNAUTHORIZED",
+  "error_msg": "Header x-signature is invalid.",
+  "http_status": 401,
+  "request_id": "767eb1fe-4a2a-433b-ab63-b2382800a79c"
+}
+14264 2026-09-30 10:23:21,779 webull.core.client ERROR get_response exception. {
+  "error_code": "UNAUTHORIZED",
+  "error_msg": "Header x-signature is invalid.",
+  "http_status": 401,
+  "request_id": "767eb1fe-4a2a-433b-ab63-b2382800a79c"
+}
+14264 2026-09-30 10:23:21,779 webull.core.client ERROR get_response exception. {
+  "error_code": "UNAUTHORIZED",
+  "error_msg": "Header x-signature is invalid.",
+  "http_status": 401,
+  "request_id": "767eb1fe-4a2a-433b-ab63-b2382800a79c"
+}
+14264 2026-09-30 10:23:21,779 webull.core.client ERROR get_response exception. {
+  "error_code": "UNAUTHORIZED",
+  "error_msg": "Header x-signature is invalid.",
+  "http_status": 401,
+  "request_id": "767eb1fe-4a2a-433b-ab63-b2382800a79c"
+}
+34952 2026-09-30 10:26:11,136 webull.core.http.initializer.client_initializer INFO _check_token_enable result is False
+34952 2026-09-30 10:26:11,136 webull.core.http.initializer.client_initializer INFO _check_token_enable result is False
+34952 2026-09-30 10:26:11,136 webull.core.http.initializer.client_initializer INFO _check_token_enable result is False
+34952 2026-09-30 10:26:11,136 webull.core.http.initializer.client_initializer INFO _check_token_enable result is False
+14264 2026-09-30 10:26:17,106 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/openapi/config",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {},
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:26:16Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "bd22232c-4db1-59f8-bdc6-99e1fcd096a4",
+    "x-signature": "ig72K+e9dadkgbiczNC5NTlSfxOGJL/YIqQMvJj+X5E=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'c:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'error_code': 'UNAUTHORIZED', 'message': 'Header x-signature is invalid.'} ServerException:HTTP Status: 401, Code: UNAUTHORIZED, Msg: Header x-signature is invalid., RequestID: 5cd40a72-3217-4eef-a977-dbea89cbc5f7
+14264 2026-09-30 10:26:17,106 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/openapi/config",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {},
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:26:16Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "bd22232c-4db1-59f8-bdc6-99e1fcd096a4",
+    "x-signature": "ig72K+e9dadkgbiczNC5NTlSfxOGJL/YIqQMvJj+X5E=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'c:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'error_code': 'UNAUTHORIZED', 'message': 'Header x-signature is invalid.'} ServerException:HTTP Status: 401, Code: UNAUTHORIZED, Msg: Header x-signature is invalid., RequestID: 5cd40a72-3217-4eef-a977-dbea89cbc5f7
+14264 2026-09-30 10:26:17,106 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/openapi/config",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {},
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:26:16Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "bd22232c-4db1-59f8-bdc6-99e1fcd096a4",
+    "x-signature": "ig72K+e9dadkgbiczNC5NTlSfxOGJL/YIqQMvJj+X5E=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'c:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'error_code': 'UNAUTHORIZED', 'message': 'Header x-signature is invalid.'} ServerException:HTTP Status: 401, Code: UNAUTHORIZED, Msg: Header x-signature is invalid., RequestID: 5cd40a72-3217-4eef-a977-dbea89cbc5f7
+14264 2026-09-30 10:26:17,106 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/openapi/config",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {},
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:26:16Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "bd22232c-4db1-59f8-bdc6-99e1fcd096a4",
+    "x-signature": "ig72K+e9dadkgbiczNC5NTlSfxOGJL/YIqQMvJj+X5E=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'c:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'error_code': 'UNAUTHORIZED', 'message': 'Header x-signature is invalid.'} ServerException:HTTP Status: 401, Code: UNAUTHORIZED, Msg: Header x-signature is invalid., RequestID: 5cd40a72-3217-4eef-a977-dbea89cbc5f7
+14264 2026-09-30 10:26:17,106 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/openapi/config",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {},
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:26:16Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "bd22232c-4db1-59f8-bdc6-99e1fcd096a4",
+    "x-signature": "ig72K+e9dadkgbiczNC5NTlSfxOGJL/YIqQMvJj+X5E=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'c:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'error_code': 'UNAUTHORIZED', 'message': 'Header x-signature is invalid.'} ServerException:HTTP Status: 401, Code: UNAUTHORIZED, Msg: Header x-signature is invalid., RequestID: 5cd40a72-3217-4eef-a977-dbea89cbc5f7
+14264 2026-09-30 10:26:17,106 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/openapi/config",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {},
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:26:16Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "bd22232c-4db1-59f8-bdc6-99e1fcd096a4",
+    "x-signature": "ig72K+e9dadkgbiczNC5NTlSfxOGJL/YIqQMvJj+X5E=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'c:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'error_code': 'UNAUTHORIZED', 'message': 'Header x-signature is invalid.'} ServerException:HTTP Status: 401, Code: UNAUTHORIZED, Msg: Header x-signature is invalid., RequestID: 5cd40a72-3217-4eef-a977-dbea89cbc5f7
+14264 2026-09-30 10:26:17,115 webull.core.client ERROR get_response exception. {
+  "error_code": "UNAUTHORIZED",
+  "error_msg": "Header x-signature is invalid.",
+  "http_status": 401,
+  "request_id": "5cd40a72-3217-4eef-a977-dbea89cbc5f7"
+}
+14264 2026-09-30 10:26:17,115 webull.core.client ERROR get_response exception. {
+  "error_code": "UNAUTHORIZED",
+  "error_msg": "Header x-signature is invalid.",
+  "http_status": 401,
+  "request_id": "5cd40a72-3217-4eef-a977-dbea89cbc5f7"
+}
+14264 2026-09-30 10:26:17,115 webull.core.client ERROR get_response exception. {
+  "error_code": "UNAUTHORIZED",
+  "error_msg": "Header x-signature is invalid.",
+  "http_status": 401,
+  "request_id": "5cd40a72-3217-4eef-a977-dbea89cbc5f7"
+}
+14264 2026-09-30 10:26:17,115 webull.core.client ERROR get_response exception. {
+  "error_code": "UNAUTHORIZED",
+  "error_msg": "Header x-signature is invalid.",
+  "http_status": 401,
+  "request_id": "5cd40a72-3217-4eef-a977-dbea89cbc5f7"
+}
+14264 2026-09-30 10:26:17,115 webull.core.client ERROR get_response exception. {
+  "error_code": "UNAUTHORIZED",
+  "error_msg": "Header x-signature is invalid.",
+  "http_status": 401,
+  "request_id": "5cd40a72-3217-4eef-a977-dbea89cbc5f7"
+}
+14264 2026-09-30 10:26:17,115 webull.core.client ERROR get_response exception. {
+  "error_code": "UNAUTHORIZED",
+  "error_msg": "Header x-signature is invalid.",
+  "http_status": 401,
+  "request_id": "5cd40a72-3217-4eef-a977-dbea89cbc5f7"
+}
+14264 2026-09-30 10:33:14,607 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/openapi/config",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {},
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:33:13Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "034e1cf9-8b1b-500c-b520-534ef7ec7444",
+    "x-signature": "4V33WQ1MLNz0M1+Q6W1rnpJU5HT5oOl3EbVclFLnG2s=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'c:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'error_code': 'UNAUTHORIZED', 'message': 'Header x-signature is invalid.'} ServerException:HTTP Status: 401, Code: UNAUTHORIZED, Msg: Header x-signature is invalid., RequestID: faab4bfd-8751-40fb-a71e-20d5bbb3d9ed
+14264 2026-09-30 10:33:14,607 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/openapi/config",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {},
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:33:13Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "034e1cf9-8b1b-500c-b520-534ef7ec7444",
+    "x-signature": "4V33WQ1MLNz0M1+Q6W1rnpJU5HT5oOl3EbVclFLnG2s=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'c:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'error_code': 'UNAUTHORIZED', 'message': 'Header x-signature is invalid.'} ServerException:HTTP Status: 401, Code: UNAUTHORIZED, Msg: Header x-signature is invalid., RequestID: faab4bfd-8751-40fb-a71e-20d5bbb3d9ed
+14264 2026-09-30 10:33:14,607 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/openapi/config",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {},
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:33:13Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "034e1cf9-8b1b-500c-b520-534ef7ec7444",
+    "x-signature": "4V33WQ1MLNz0M1+Q6W1rnpJU5HT5oOl3EbVclFLnG2s=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'c:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'error_code': 'UNAUTHORIZED', 'message': 'Header x-signature is invalid.'} ServerException:HTTP Status: 401, Code: UNAUTHORIZED, Msg: Header x-signature is invalid., RequestID: faab4bfd-8751-40fb-a71e-20d5bbb3d9ed
+14264 2026-09-30 10:33:14,607 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/openapi/config",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {},
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:33:13Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "034e1cf9-8b1b-500c-b520-534ef7ec7444",
+    "x-signature": "4V33WQ1MLNz0M1+Q6W1rnpJU5HT5oOl3EbVclFLnG2s=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'c:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'error_code': 'UNAUTHORIZED', 'message': 'Header x-signature is invalid.'} ServerException:HTTP Status: 401, Code: UNAUTHORIZED, Msg: Header x-signature is invalid., RequestID: faab4bfd-8751-40fb-a71e-20d5bbb3d9ed
+14264 2026-09-30 10:33:14,607 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/openapi/config",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {},
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:33:13Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "034e1cf9-8b1b-500c-b520-534ef7ec7444",
+    "x-signature": "4V33WQ1MLNz0M1+Q6W1rnpJU5HT5oOl3EbVclFLnG2s=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'c:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'error_code': 'UNAUTHORIZED', 'message': 'Header x-signature is invalid.'} ServerException:HTTP Status: 401, Code: UNAUTHORIZED, Msg: Header x-signature is invalid., RequestID: faab4bfd-8751-40fb-a71e-20d5bbb3d9ed
+14264 2026-09-30 10:33:14,607 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/openapi/config",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {},
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:33:13Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "034e1cf9-8b1b-500c-b520-534ef7ec7444",
+    "x-signature": "4V33WQ1MLNz0M1+Q6W1rnpJU5HT5oOl3EbVclFLnG2s=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'c:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'error_code': 'UNAUTHORIZED', 'message': 'Header x-signature is invalid.'} ServerException:HTTP Status: 401, Code: UNAUTHORIZED, Msg: Header x-signature is invalid., RequestID: faab4bfd-8751-40fb-a71e-20d5bbb3d9ed
+14264 2026-09-30 10:33:14,607 webull.core.client ERROR ServerException occurred. Host:api.sandbox.webull.com SDK-Version:3.0.2 Request:{
+  "_version": "v3",
+  "_action_name": "/openapi/config",
+  "_protocol_type": "https",
+  "_accept_format": "JSON",
+  "_params": {},
+  "_method": "GET",
+  "_header": {
+    "x-version": "v3",
+    "Accept-Encoding": "gzip",
+    "x-app-key": "us.cbfa09f21c78132eac66bcf55d3eade8",
+    "x-timestamp": "2026-09-30T03:33:13Z",
+    "x-signature-version": "1.0",
+    "x-signature-algorithm": "HMAC-SHA256",
+    "x-signature-nonce": "034e1cf9-8b1b-500c-b520-534ef7ec7444",
+    "x-signature": "4V33WQ1MLNz0M1+Q6W1rnpJU5HT5oOl3EbVclFLnG2s=",
+    "User-Agent": "WebullApiSDK (Windows 10;AMD64) Python/3.11.16 Core/3.0.2 python-requests/2.34.2",
+    "x-webull-client-source": "sdk"
+  },
+  "_body_params": null,
+  "_uri_pattern": null,
+  "_uri_params": null,
+  "_content": null,
+  "_extra_user_agent": {},
+  "string_to_sign": "",
+  "_request_connect_timeout": null,
+  "_request_read_timeout": null,
+  "endpoint": "api.sandbox.webull.com",
+  "_signer_spec": "<module 'webull.core.auth.algorithm.sha_hmac1' from 'c:\\\\Users\\\\Napat\\\\anaconda3\\\\envs\\\\webull_trading\\\\Lib\\\\site-packages\\\\webull\\\\core\\\\auth\\\\algorithm\\\\sha_hmac1.py'>"
+} Response:{'error_code': 'UNAUTHORIZED', 'message': 'Header x-signature is invalid.'} ServerException:HTTP Status: 401, Code: UNAUTHORIZED, Msg: Header x-signature is invalid., RequestID: faab4bfd-8751-40fb-a71e-20d5bbb3d9ed
+14264 2026-09-30 10:33:14,611 webull.core.client ERROR get_response exception. {
+  "error_code": "UNAUTHORIZED",
+  "error_msg": "Header x-signature is invalid.",
+  "http_status": 401,
+  "request_id": "faab4bfd-8751-40fb-a71e-20d5bbb3d9ed"
+}
+14264 2026-09-30 10:33:14,611 webull.core.client ERROR get_response exception. {
+  "error_code": "UNAUTHORIZED",
+  "error_msg": "Header x-signature is invalid.",
+  "http_status": 401,
+  "request_id": "faab4bfd-8751-40fb-a71e-20d5bbb3d9ed"
+}
+14264 2026-09-30 10:33:14,611 webull.core.client ERROR get_response exception. {
+  "error_code": "UNAUTHORIZED",
+  "error_msg": "Header x-signature is invalid.",
+  "http_status": 401,
+  "request_id": "faab4bfd-8751-40fb-a71e-20d5bbb3d9ed"
+}
+14264 2026-09-30 10:33:14,611 webull.core.client ERROR get_response exception. {
+  "error_code": "UNAUTHORIZED",
+  "error_msg": "Header x-signature is invalid.",
+  "http_status": 401,
+  "request_id": "faab4bfd-8751-40fb-a71e-20d5bbb3d9ed"
+}
+14264 2026-09-30 10:33:14,611 webull.core.client ERROR get_response exception. {
+  "error_code": "UNAUTHORIZED",
+  "error_msg": "Header x-signature is invalid.",
+  "http_status": 401,
+  "request_id": "faab4bfd-8751-40fb-a71e-20d5bbb3d9ed"
+}
+14264 2026-09-30 10:33:14,611 webull.core.client ERROR get_response exception. {
+  "error_code": "UNAUTHORIZED",
+  "error_msg": "Header x-signature is invalid.",
+  "http_status": 401,
+  "request_id": "faab4bfd-8751-40fb-a71e-20d5bbb3d9ed"
+}
+14264 2026-09-30 10:33:14,611 webull.core.client ERROR get_response exception. {
+  "error_code": "UNAUTHORIZED",
+  "error_msg": "Header x-signature is invalid.",
+  "http_status": 401,
+  "request_id": "faab4bfd-8751-40fb-a71e-20d5bbb3d9ed"
+}
+25900 2026-09-30 10:34:04,761 webull.core.http.initializer.client_initializer INFO _check_token_enable result is False
+25900 2026-09-30 10:34:07,707 webull.core.http.initializer.client_initializer INFO _check_token_enable result is False
+25900 2026-09-30 10:34:07,707 webull.core.http.initializer.client_initializer INFO _check_token_enable result is False
