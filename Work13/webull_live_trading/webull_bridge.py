@@ -30,7 +30,7 @@ load_dotenv(Path(__file__).parent / ".env")  # โหลดค่าจาก .e
 from dataclasses import dataclass
 from typing import Optional
 
-SANDBOX_HOST = "us-openapi-alb.uat.webullbroker.com"   # ยืนยันจากเอกสารทางการ
+SANDBOX_HOST = "api.sandbox.webull.com"   # ยืนยันจากเอกสารทางการ
 PRODUCTION_HOST = "api.webull.com"
 
 
