@@ -6,33 +6,33 @@ webull-openapi-python-sdk แต่ import เป็น `webull` เฉยๆ �
 tedchou12/webull)
 
 ติดตั้ง:
-    pip3 install --upgrade webull-openapi-python-sdk
+    pip3 install --upgrade webull-openapi-python-sdk python-dotenv
 
 ผมติดตั้งแพ็กเกจนี้จริงและอ่าน source code (webull/trade/, webull/core/) เพื่อ
 ยืนยัน method/field names ด้านล่าง + เทียบกับตัวอย่าง JSON บนหน้า docs ทางการ
-(developer.webull.com/apis/docs/trade-api/trade) แล้ว แต่ **ยังไม่เคยยิง
-request จริงไปที่ server ของ Webull** เพราะ sandbox รันโค้ดของผมต่อเน็ตไปที่
-us-openapi-alb.uat.webullbroker.com ไม่ได้ (ไฟร์วอลล์ whitelist เฉพาะ
-pypi/npm/github) — รอบแรกที่รันจริง ให้เรียก get_account_summary() /
-get_positions() ก่อนแล้ว print(resp) ดูโครงสร้างจริงเทียบกับโค้ดด้านล่าง
-ก่อนยิง order จริง
+(developer.webull.com/apis/docs/trade-api/trade) แล้ว
 
 Base URL (ยืนยันจาก developer.webull.com/apis/docs/trade-api/trade):
     Production : https://api.webull.com/
     Test/UAT   : http://us-openapi-alb.uat.webullbroker.com/   (สังเกตเป็น http ไม่ใช่ https)
 
 Credentials:
-    - Sandbox: สมัครเองได้ฟรีที่ Developer Tool -> OpenAPI Management (อนุมัติอัตโนมัติ)
-    - หรือใช้ shared test app key/secret ที่ Webull เผยแพร่ไว้ที่หน้า
-      https://developer.webull.com/apis/docs/sdk (ตาราง "Test Accounts")
-      — คัดลอกค่าปัจจุบันจากหน้านั้นเอง เผื่อ Webull หมุนเวียนค่า
+    อ่านจากไฟล์ .env ในโฟลเดอร์เดียวกับไฟล์นี้ (ดู .env.example) หรือจาก
+    environment variables ตรงๆ ก็ได้ (เช่นที่ตั้งผ่าน conda env config vars set)
+    .env จะ override ค่าที่ตั้งไว้ใน conda ถ้ามีทั้งคู่
 """
 import os
+from pathlib import Path
+
+from dotenv import load_dotenv
+load_dotenv(Path(__file__).parent / ".env")  # โหลดค่าจาก .env เข้าเป็น environment variables
+
 from dataclasses import dataclass
 from typing import Optional
 
-SANDBOX_HOST = "api.sandbox.webull.com"
+SANDBOX_HOST = "us-openapi-alb.uat.webullbroker.com"   # ยืนยันจากเอกสารทางการ
 PRODUCTION_HOST = "api.webull.com"
+
 
 @dataclass
 class WebullCredentials:
@@ -66,6 +66,13 @@ class WebullBridge:
         self.trade = TradeClient(self.client)
 
     # ---------------------------------------------------------------- account
+    def get_account_list(self) -> dict:
+        """ใช้เช็คว่า key/secret ตอนนี้เข้าถึง account_id ไหนได้บ้าง — เรียกก่อน
+        get_account_summary() ทุกครั้งที่เจอ 403 ACCOUNT_ACCESS_DENIED เพราะมักแปลว่า
+        account_id เดิมไม่ตรงกับที่ key นี้เข้าถึงได้แล้ว (เช่น หลัง reset บัญชี)"""
+        resp = self.trade.account_v2.get_account_list()
+        return resp.json() if hasattr(resp, "json") else resp
+
     def get_account_summary(self) -> dict:
         """คืน raw response ของ get_account_balance — print(resp.json()) ดูก่อนใช้จริง
         เพื่อเช็ค field ที่แน่นอน (เช่น net liquidation value / cash balance)"""
@@ -110,7 +117,12 @@ class WebullBridge:
         return resp.json() if hasattr(resp, "json") else resp
 
     def submit_market_on_open_order(self, client_order_id: str, symbol: str, side: str, quantity: int) -> dict:
-        """ตรงกับ timing ของโมเดล: ตัดสินใจหลังปิดตลาดวันนี้ -> เข้าที่ open ของพรุ่งนี้"""
+        """ชื่อฟังก์ชันยังคงเดิมไว้เพื่อให้ run_live.py ไม่ต้องแก้ แต่ส่งเป็น "MARKET" ธรรมดา
+        เพราะ MARKET_ON_OPEN เป็น order type สำหรับบัญชี Institutional เท่านั้น
+        (ยืนยันจากเอกสาร Webull: 'Execute at the opening price (institutional only)')
+        บัญชี Individual อย่างเราใช้ไม่ได้ — ส่ง MARKET แทน ซึ่งถ้าส่งตอนตลาดปิด
+        จะถูก queue ไว้แล้ว execute ตอนตลาดเปิดรอบถัดไปโดยอัตโนมัติอยู่แล้ว
+        (ยืนยันจาก order ที่เคย FILLED จริงในบัญชีคุณ)"""
         return self.submit_order(client_order_id, symbol, side, "MARKET", quantity)
 
     def cancel_order(self, client_order_id: str) -> dict:
