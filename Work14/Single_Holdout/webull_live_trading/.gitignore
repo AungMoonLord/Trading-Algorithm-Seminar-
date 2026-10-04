@@ -1,0 +1,47 @@
+# ===== ความลับ — ห้าม commit เด็ดขาด =====
+.env
+.env.*
+!.env.example
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.pyc
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# ===== Virtual environments =====
+venv/
+.venv/
+env/
+ENV/
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+
+# ===== Log ที่ webull-openapi-python-sdk สร้างเอง =====
+webull_trade_sdk.log*
+
+# ===== ไฟล์ state/ที่ระบบสร้างขึ้นเองตอนรัน (reproduce ใหม่ได้ด้วย fetch_scaling_stats.py) =====
+schemes/*/state/clean_features_full_history.parquet
+schemes/*/state/live_state_*.json
+
+# เก็บ scaling_stats.json ไว้ใน git ก็ได้ (ไฟล์เล็ก useful สำหรับ reproduce ผล)
+# ถ้าไม่อยาก commit ด้วย ลบ comment บรรทัดล่างนี้ออก
+# schemes/*/state/scaling_stats.json
+
+# ===== ข้อมูลบัญชี/ประวัติเทรดที่อาจมีตัวเลขเงินจริง (ถ้าไม่อยากให้คนอื่นเห็น) =====
+webull_dashboard_raw.json
+trade_data/
+
+# ===== OS / Editor =====
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ===== โมเดล: ถ้าไฟล์ .zip ใหญ่เกินไปสำหรับ git ปกติ (>100MB) ให้ลบ comment บรรทัดล่าง
+# และใช้ Git LFS แทน (git lfs track "*.zip")
+# *.zip
