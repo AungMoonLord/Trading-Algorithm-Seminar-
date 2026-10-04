@@ -71,7 +71,7 @@ schemes/
 ### 1) สร้าง environment
 ```powershell
 conda create -n webull_trading python=3.11 -y
-conda activate sliding_window
+conda activate webull_trading
 ```
 
 ### 2) ติดตั้งไลบรารี
