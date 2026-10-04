@@ -18,7 +18,6 @@ SPY, QQQ, DIA, TLT, GLD) มาต่อกับ **Webull OpenAPI (Sandbox / Pa
 ใช้แค่ **PPO** algorithm เท่านั้น
 
 เชื่อมต่อ Webull Sandbox สำเร็จแล้วจริง มี order FILLED จริงในบัญชี Paper Trade
-มาแล้ว (ดูหัวข้อ "บทเรียนที่เจอมาแล้ว" ท้ายไฟล์ สำหรับปัญหาที่เคยเจอและวิธีแก้)
 
 ---
 
