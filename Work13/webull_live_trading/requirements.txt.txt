@@ -1,0 +1,17 @@
+# ---- Data & Market Feeds ----
+yfinance>=0.2.40
+pandas-datareader>=0.10.0
+
+# ---- Technical Indicators ----
+ta>=0.11.0
+
+# ---- Reinforcement Learning ----
+stable-baselines3>=2.3.0
+gymnasium>=0.29.1
+torch>=2.2.0
+
+# ---- Config / Secrets ----
+python-dotenv>=1.0.1
+
+# ---- Broker API ----
+webull-openapi-python-sdk>=3.0.0

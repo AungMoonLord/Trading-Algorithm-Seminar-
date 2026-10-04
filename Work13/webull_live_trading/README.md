@@ -76,8 +76,8 @@ conda activate webull_trading
 
 ### 2) ติดตั้งไลบรารี
 ```powershell
-pip install yfinance pandas_datareader ta stable-baselines3 gymnasium torch python-dotenv
-pip install --upgrade webull-openapi-python-sdk
+python -m pip install --upgrade pip
+pip install -r requirements.txt
 ```
 
 ### 3) ตั้งค่า API key ผ่าน `.env`
