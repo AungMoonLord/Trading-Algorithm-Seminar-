@@ -19,6 +19,8 @@ from pathlib import Path
 
 import common as C
 import live_inference as LI
+import telegram_report as TG
+import trade_logger as TL
 from webull_bridge import WebullBridge, WebullCredentials
 
 
@@ -38,19 +40,18 @@ def parse_account_equity(acct: dict) -> float:
 
 def parse_position_values(positions_raw, tickers) -> dict:
     """คืน {ticker: market_value} เฉพาะ 5 ตัวของเรา
-    หมายเหตุ: ตอนที่ยืนยัน field พอร์ตยังว่าง ([]) จึงยังไม่เคยเห็นหน้าตา position จริง
-    ถ้าเจอ position แล้วชื่อ field ไม่ตรงที่รองรับ จะหยุดพร้อมแสดงข้อมูลดิบให้ดู (ไม่เดามั่ว)"""
+    field name ยืนยันแล้วจาก response จริง: symbol, quantity, last_price, market_value"""
     items = positions_raw
     if isinstance(items, dict):
         items = items.get("positions") or items.get("data") or []
     out = {t: 0.0 for t in tickers}
     for it in items:
-        sym = it.get("symbol") or it.get("ticker")
+        sym = it.get("symbol")
         if sym not in out:
             continue
-        mv = it.get("market_value", it.get("marketValue"))
+        mv = it.get("market_value")
         if mv is None:
-            qty, px = it.get("quantity", it.get("qty")), it.get("last_price", it.get("lastPrice"))
+            qty, px = it.get("quantity"), it.get("last_price")
             if qty is None or px is None:
                 raise KeyError(f"ไม่รู้จัก field ของ position นี้ (ส่งข้อความนี้ให้ผู้ช่วยดู): {it}")
             mv = float(qty) * float(px)
@@ -58,7 +59,8 @@ def parse_position_values(positions_raw, tickers) -> dict:
     return out
 
 
-def run_one(scheme: str, algo: str, execute: bool, fetch_end: str, bridge: WebullBridge = None):
+def run_one(scheme: str, algo: str, execute: bool, fetch_end: str, bridge: WebullBridge = None,
+            notify: bool = True):
     cfg = importlib.import_module(f"schemes.{scheme}.config")
     model_path = model_path_for(cfg, algo)
     model_name = f"{scheme}_{algo}"
@@ -112,14 +114,35 @@ def run_one(scheme: str, algo: str, execute: bool, fetch_end: str, bridge: Webul
 
     if not execute:
         print("(dry-run — ไม่ได้ส่ง order จริง)")
+        if notify:
+            text = TG.build_report(bridge, bridge.creds, scheme, algo, executed=False, result=result)
+            print(text)
+            TG.send(text)
         return result
 
     for o in result.orders:
         client_order_id = f"{model_name}_{o.ticker}"[:40]
-        resp = bridge.submit_order(
-            client_order_id=client_order_id, symbol=o.ticker, side=o.side, order_type="MARKET", quantity=o.approx_qty,
+        resp = bridge.submit_market_on_open_order(
+            client_order_id=client_order_id, symbol=o.ticker, side=o.side, quantity=o.approx_qty,
         )
         print(f">> ส่ง {o.side} {o.approx_qty} {o.ticker} -> {resp}")
+
+    # ---- บันทึก CSV (เฉพาะตอนส่งจริง) ----
+    new_rows = None
+    if result.orders:
+        try:
+            order_history = bridge.get_order_history()
+            new_rows = TL.log_order_history_to_csv(scheme, algo, order_history)
+            print(f">> บันทึก {len(new_rows)} order ใหม่ลง {TL.csv_path(scheme, algo)}")
+        except Exception as e:
+            print(f"[csv] บันทึกไม่สำเร็จ (ไม่กระทบ order ที่ส่งไปแล้ว): {e}")
+
+    # ---- แจ้งเตือน Telegram ----
+    if notify:
+        text = TG.build_report(bridge, bridge.creds, scheme, algo, executed=True,
+                                result=result, new_csv_rows=new_rows)
+        print(text)
+        TG.send(text)
 
     return result
 
@@ -130,10 +153,14 @@ def main():
     ap.add_argument("--algo", required=True, choices=["ppo", "a2c", "sac", "td3"])
     ap.add_argument("--fetch-end", default=None, help="วันที่สิ้นสุดดึงข้อมูล (default: พรุ่งนี้ เพราะ yfinance นับ end แบบไม่รวมวันนั้น)")
     ap.add_argument("--execute", action="store_true")
+    ap.add_argument("--dry-run", action="store_true",
+                     help="ไม่ต้องใส่ก็ได้ (เป็นค่า default อยู่แล้ว) ใส่ไว้เผื่ออยากเขียนให้ชัดเจนในคำสั่ง — ไม่มีผลใดๆ แค่ทำให้ไม่ error ถ้าพิมพ์มา")
+    ap.add_argument("--no-notify", action="store_true", help="ปิดการส่ง Telegram รอบนี้ (ยังบันทึก CSV ตามปกติถ้า --execute)")
     args = ap.parse_args()
 
     fetch_end = args.fetch_end or (dt.date.today() + dt.timedelta(days=1)).isoformat()
-    run_one(args.scheme, args.algo, args.execute, fetch_end)
+    execute = args.execute and not args.dry_run  # --dry-run ชนะเสมอ ถ้าเผลอใส่ทั้งคู่ (ปลอดภัยไว้ก่อน)
+    run_one(args.scheme, args.algo, execute, fetch_end, notify=not args.no_notify)
 
 
 if __name__ == "__main__":
