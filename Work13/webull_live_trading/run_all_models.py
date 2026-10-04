@@ -21,7 +21,7 @@ import run_live as RL
 from webull_bridge import WebullBridge, WebullCredentials
 
 ALL_SCHEMES = ["sliding_window", "expanding_window", "single_holdout"]
-ALL_ALGOS = ["ppo", "a2c", "sac", "td3"]
+ALL_ALGOS = ["ppo"]
 
 
 def main():
