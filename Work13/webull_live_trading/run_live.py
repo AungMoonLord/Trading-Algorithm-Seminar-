@@ -20,7 +20,7 @@ from pathlib import Path
 import common as C
 import live_inference as LI
 import telegram_report as TG
-import trade_logger as TL
+import telegram_csv as TL
 from webull_bridge import WebullBridge, WebullCredentials
 
 
