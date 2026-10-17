@@ -1,0 +1,16 @@
+method,reported_timestamp,timezone,net_liq,first_snapshot_100
+Single Holdout,2026-10-05 15:36:35,unspecified_in_report,999992.29,100.0
+Single Holdout,2026-10-06 16:32:01,unspecified_in_report,1008249.25,100.82570236616525
+Single Holdout,2026-10-07 16:15:12,unspecified_in_report,1000567.13,100.05748444320506
+Single Holdout,2026-10-08 14:13:02,unspecified_in_report,1002132.95,100.21406765046159
+Single Holdout,2026-10-09 18:26:10,unspecified_in_report,1008544.74,100.85525159398979
+Expanding Window,2026-10-05 15:36:30,unspecified_in_report,999983.04,100.0
+Expanding Window,2026-10-06 16:24:33,unspecified_in_report,1008575.8,100.85929057356812
+Expanding Window,2026-10-07 16:15:09,unspecified_in_report,1000457.19,100.04741580417203
+Expanding Window,2026-10-08 14:12:40,unspecified_in_report,1001929.33,100.19463230096382
+Expanding Window,2026-10-09 18:26:10,unspecified_in_report,1008510.25,100.85273546239344
+Sliding Window,2026-10-05 15:36:24,unspecified_in_report,1000000.0,100.0
+Sliding Window,2026-10-06 19:59:50,unspecified_in_report,1007253.94,100.725394
+Sliding Window,2026-10-07 16:15:17,unspecified_in_report,1000519.0,100.0519
+Sliding Window,2026-10-08 14:12:46,unspecified_in_report,1001961.33,100.196133
+Sliding Window,2026-10-09 18:25:51,unspecified_in_report,1008458.66,100.845866
