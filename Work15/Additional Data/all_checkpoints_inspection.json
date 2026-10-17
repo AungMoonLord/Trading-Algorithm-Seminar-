@@ -1,0 +1,41 @@
+{
+  "Single Holdout": {
+    "filename": "best_model.zip",
+    "sha256": "e0ae2b6847a8966df804f1c8412456fae0b30ecaa8d8d661c093339bfb70b9bc",
+    "_stable_baselines3_version": "2.9.0",
+    "system_info.txt": "- OS: Windows-10-10.0.26200-SP0 10.0.26200\n- Python: 3.10.20\n- Stable-Baselines3: 2.9.0\n- PyTorch: 2.13.0+cu132\n- GPU Enabled: True\n- Numpy: 2.0.1\n- Cloudpickle: 3.1.2\n- Gymnasium: 1.3.0",
+    "seed": 43,
+    "num_timesteps": 4000,
+    "n_envs": 8,
+    "n_steps": 1024,
+    "batch_size": 256,
+    "n_epochs": 10,
+    "gamma": 0.99
+  },
+  "Expanding Window": {
+    "filename": "best_model.zip",
+    "sha256": "548e8c3615dcea80ac523ffb6941569902547fae2a779733171e8050b5d67504",
+    "_stable_baselines3_version": "2.9.0",
+    "system_info.txt": "- OS: Windows-10-10.0.26200-SP0 10.0.26200\n- Python: 3.10.20\n- Stable-Baselines3: 2.9.0\n- PyTorch: 2.13.0+cu132\n- GPU Enabled: True\n- Numpy: 2.0.1\n- Cloudpickle: 3.1.2\n- Gymnasium: 1.3.0",
+    "seed": 47,
+    "num_timesteps": 4000,
+    "n_envs": 8,
+    "n_steps": 1024,
+    "batch_size": 256,
+    "n_epochs": 10,
+    "gamma": 0.99
+  },
+  "Sliding Window": {
+    "filename": "best_model.zip",
+    "sha256": "135181234fbefe0c1d8879adfb27c1b74f22e365bd745d9363dd3b8765f90d62",
+    "_stable_baselines3_version": "2.9.0",
+    "system_info.txt": "- OS: Windows-10-10.0.26200-SP0 10.0.26200\n- Python: 3.10.20\n- Stable-Baselines3: 2.9.0\n- PyTorch: 2.13.0+cu132\n- GPU Enabled: True\n- Numpy: 2.0.1\n- Cloudpickle: 3.1.2\n- Gymnasium: 1.3.0",
+    "seed": 47,
+    "num_timesteps": 4000,
+    "n_envs": 8,
+    "n_steps": 1024,
+    "batch_size": 256,
+    "n_epochs": 10,
+    "gamma": 0.99
+  }
+}
